@@ -1,0 +1,29 @@
+{
+  "name": "learning-ds",
+  "version": "0.1.0",
+  "description": "Notes and examples while learning The Grid's DS",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/the-grid/learning-ds.git"
+  },
+  "keywords": [
+    "ds",
+    "thegrid",
+    "designsystems",
+    "ai",
+    "learning"
+  ],
+  "author": "Vilson Vieira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-grid/learning-ds/issues"
+  },
+  "homepage": "https://github.com/the-grid/learning-ds#readme",
+  "dependencies": {
+    "@the-grid/multiversejson": "^1.0.1"
+  }
+}
