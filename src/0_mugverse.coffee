@@ -45,6 +45,6 @@ sort = (a, b) ->
 
 mugverse = new Multiverse mugs, { pathAccumulationKeys, sort }
 
-console.log JSON.stringify(mugverse.collapse(0), null, '')
+console.log JSON.stringify(mugverse.collapse(0), null, 2)
 
 console.log mugverse.getAllPaths()
