@@ -194,6 +194,17 @@ page).
  - Return html and imgfloUrls to written to file (the html)
      Write the dumped HTML into a file
 
+# Understanding
+
+https://github.com/design-systems/ds-architecture
+
+## the-stylist
+
+### the-style-solver
+
+Only solves some of the branches (those marked with `Y_`), other branches will
+be solved by parent solver (`$Y_`)??
+
 # Todo
 
 - Understand the-curator better (matrix path solver, harmonies
@@ -226,7 +237,17 @@ solver)
 - The Stylist
 - The Plumber
 
-# Ideas
+# Ideas to improve DS architecture
+
+- Why did we removed the-tagger originally? That's a nice place to apply some ML
+  classifier on data coming from APIs. We can filter only good images for
+  instance, or only data coming from good providers (e.g. bump blocks from The
+  Verge to be presented first)
+
+- Following the same idea, we can start being more specific on things like
+  inlets. Example: only accepts data from The Verge site to be displayed on a
+  TheVergeComponent which will render the data with specific styles like a nice
+  TheVerge logo as watermark
 
 - Keep updating harmonies (specially probability vectors of Markov chains) with
   new ones coming from (1) user redesigns and (2) global vectors for a same ds
@@ -243,3 +264,7 @@ Like "all $Y_ branches should be solved now, and Y_ can be
 solved later"?
 Yes, exactly.
 
+
+- What is the original goal of the-gatherer? Examples: a video item of a
+  YouTube about deep learning, the-gatherer could gather extra items and
+  present them as "related/suggested videos"
